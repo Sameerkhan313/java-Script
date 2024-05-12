@@ -245,13 +245,72 @@
 // console.log(student4)
 
 
-let name = 'bobo'
+// let name = 'bobo'
 
-function calculate(){
-   const name = 'sameer'
-   const age = 24
-   becomesGlobal = 'globar variable'
+// function calculate(){
+//    const name = 'sameer'
+//    const age = 24
+//    becomesGlobal = 'globar variable'
+// }
+
+// calculate()
+
+// Slide  # 98
+
+const students = [
+   {
+   id:1,
+   name:"sameer",
+   score: 80,
+   favouriteSubject: "match"
+},
+{
+   id:2,
+   name:"salman",
+   score: 60,
+   favouriteSubject: "english"
+},
+{
+   id:3,
+   name:"zaid",
+   score: 90,
+   favouriteSubject: "urdu"
+},
+{
+   id:4,
+   name:"shariq",
+   score: 60,
+   favouriteSubject: "physics"
+},
+{
+   id:5,
+   name:"shuraim",
+   score: 50,
+   favouriteSubject: "biology"
 }
+]
 
-calculate()
 
+const updatedStudents = students.map((item) =>{
+return{
+   ...item,
+   role:"Students"
+}  
+
+})
+
+console.log(updatedStudents)
+
+const highScore = students.filter((item) =>{
+   return item.score >=80
+   
+   })
+   
+   console.log(highScore)
+
+   const specificId = students.find((item) =>{
+      return item.id == 3
+      
+      })
+      
+      console.log(specificId)
