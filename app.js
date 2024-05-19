@@ -257,60 +257,81 @@
 
 // Slide  # 98
 
+// const students = [
+//    {
+//    id:1,
+//    name:"sameer",
+//    score: 80,
+//    favouriteSubject: "match"
+// },
+// {
+//    id:2,
+//    name:"salman",
+//    score: 60,
+//    favouriteSubject: "english"
+// },
+// {
+//    id:3,
+//    name:"zaid",
+//    score: 90,
+//    favouriteSubject: "urdu"
+// },
+// {
+//    id:4,
+//    name:"shariq",
+//    score: 60,
+//    favouriteSubject: "physics"
+// },
+// {
+//    id:5,
+//    name:"shuraim",
+//    score: 50,
+//    favouriteSubject: "biology"
+// }
+// ]
+
+
+// const updatedStudents = students.map((item) =>{
+// return{
+//    ...item,
+//    role:"Students"
+// }  
+
+// })
+
+// console.log(updatedStudents)
+
+// const highScore = students.filter((item) =>{
+//    return item.score >=80
+   
+//    })
+   
+//    console.log(highScore)
+
+//    const specificId = students.find((item) =>{
+//       return item.id == 3
+      
+//       })
+      
+//       console.log(specificId)
+
 const students = [
-   {
-   id:1,
-   name:"sameer",
-   score: 80,
-   favouriteSubject: "match"
-},
-{
-   id:2,
-   name:"salman",
-   score: 60,
-   favouriteSubject: "english"
-},
-{
-   id:3,
-   name:"zaid",
-   score: 90,
-   favouriteSubject: "urdu"
-},
-{
-   id:4,
-   name:"shariq",
-   score: 60,
-   favouriteSubject: "physics"
-},
-{
-   id:5,
-   name:"shuraim",
-   score: 50,
-   favouriteSubject: "biology"
-}
+   {name : "Sameer", score : 80, Subject: "Math"},
+   {name : "Salman", score : 60, Subject: "English"},
+   {name : "Zaid", score : 90, Subject: "Urdu"},
+   {name : "Shariq", score : 50, Subject: "Math"},
+   {name : "Shuraim", score : 100, Subject: "English"}
+   
 ]
+const averageScore = students.reduce((acc,crr)=>{
+   console.log (`acc is ${acc}`)
+   console.log (`crr is ${crr.score}`)
+   acc += crr.score
+   return acc
+},0)
+
+const studentLenght = (averageScore/5)
+console .log (`The Total score of All Student is ${averageScore}`)
+console.log (`The Average Score is  ${studentLenght}`)
 
 
-const updatedStudents = students.map((item) =>{
-return{
-   ...item,
-   role:"Students"
-}  
-
-})
-
-console.log(updatedStudents)
-
-const highScore = students.filter((item) =>{
-   return item.score >=80
-   
-   })
-   
-   console.log(highScore)
-
-   const specificId = students.find((item) =>{
-      return item.id == 3
-      
-      })
-      
-      console.log(specificId)
