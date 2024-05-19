@@ -1,4 +1,4 @@
-   // var shelf = ["pencils", "pens", "eraser", "ruler", "markers"]
+// var shelf = ["pencils", "pens", "eraser", "ruler", "markers"]
 
 // console.log(shelf)
 
@@ -259,79 +259,194 @@
 
 // const students = [
 //    {
-//    id:1,
-//    name:"sameer",
-//    score: 80,
-//    favouriteSubject: "match"
-// },
-// {
-//    id:2,
-//    name:"salman",
-//    score: 60,
-//    favouriteSubject: "english"
-// },
-// {
-//    id:3,
-//    name:"zaid",
-//    score: 90,
-//    favouriteSubject: "urdu"
-// },
-// {
-//    id:4,
-//    name:"shariq",
-//    score: 60,
-//    favouriteSubject: "physics"
-// },
-// {
-//    id:5,
-//    name:"shuraim",
-//    score: 50,
-//    favouriteSubject: "biology"
-// }
+//       id: 1,
+//       name: "sameer",
+//       score: 80,
+//       favouriteSubject: "match"
+//    },
+//    {
+//       id: 2,
+//       name: "salman",
+//       score: 60,
+//       favouriteSubject: "english"
+//    },
+//    {
+//       id: 3,
+//       name: "zaid",
+//       score: 90,
+//       favouriteSubject: "urdu"
+//    },
+//    {
+//       id: 4,
+//       name: "shariq",
+//       score: 60,
+//       favouriteSubject: "physics"
+//    },
+//    {
+//       id: 5,
+//       name: "shuraim",
+//       score: 50,
+//       favouriteSubject: "biology"
+//    }
 // ]
 
 
-// const updatedStudents = students.map((item) =>{
-// return{
-//    ...item,
-//    role:"Students"
-// }  
+// const updatedStudents = students.map((item) => {
+//    return {
+//       ...item,
+//       role: "Students"
+//    }
 
 // })
 
 // console.log(updatedStudents)
 
-// const highScore = students.filter((item) =>{
-//    return item.score >=80
+// const highScore = students.filter((item) => {
+//    return item.score >= 80
+
+// })
+
+// console.log(highScore)
+
+// const specificId = students.find((item) => {
+//    return item.id == 3
+
+// })
+
+// console.log(specificId)
+
+// const restuarantMenu = [
+//    {item: "Biryani", price : 300, quantity : "One Kg",},
+//    {item: "Karahi", price : 500, quantity : "Half Kg",},
+//    {item: "Handi", price : 600, quantity : "Half Kg",},
+//    {item: "Pulao", price : 400, quantity : "One Kg",}
+// ]
+
+// const updateRestaurantMenu = restuarantMenu.map((item) => {
+//    return {
+//       ...item,
+//       category: "Chicken"
+//    }
+
+// })
+
+// console.log (updateRestaurantMenu)
+
+// const halfKgitems = restuarantMenu.find ((item) => {
+//    return item.quantity == "Half Kg"
+// })
+
+// console.log (halfKgitems)
+
+
+// const lessPrice = restuarantMenu.filter((item)=>{
+//    return item.price <= 500
+// })
+
+// console.log (lessPrice)
+
+
+// const menuItems = restuarantMenu.forEach((items)=>{
+//    console.log(items.item.toUpperCase())
+// })
+
+// console.log (menuItems)
+
+
+// const pakistanTeamWorldCupSqaud= [
+//    {name: "Babar Azam", }
+// ]
+
+// const students = [
+//       {
+//          id: 1,
+//          name: "sameer",
+//          score: 80,
+//          favouriteSubject: "Math"
+//       },
+//       {
+//          id: 2,
+//          name: "salman",
+//          score: 60,
+//          favouriteSubject: "English"
+//       },
+//       {
+//          id: 3,
+//          name: "zaid",
+//          score: 90,
+//          favouriteSubject: "Urdu"
+//       },
+//       {
+//          id: 4,
+//          name: "shariq",
+//          score: 60,
+//          favouriteSubject: "Math"
+//       },
+//       {
+//          id: 5,
+//          name: "shuraim",
+//          score: 50,
+//          favouriteSubject: "English"
+//       }
+//    ]
+
+//    const totalScore = students.reduce((acc,crr) =>{
+//       return acc + crr.score
+//    },0) 
+
+//    const averageScore = totalScore/students.length
    
+//    console.log(`The Score of Total Students is ${totalScore}`);
+//    console.log(`The Average Score is ${averageScore}`);
+
+
+//    const countFavSubject = students.reduce((acc,crr) => {
+//       acc[crr.favouriteSubject] = (acc[crr.favouriteSubject] || 0)+1
+//       return acc     
+//    },{})
+
+//    console.log(countFavSubject);
+
+//    const countFavSubject2 = students.reduce(()=>{
+
 //    })
-   
-//    console.log(highScore)
 
-//    const specificId = students.find((item) =>{
-//       return item.id == 3
+
+
+// function themeChanger(){
+//    console.log("ha bhai me chal raha ho")
+//    if(document.body.style.backgroundColor == "yellow"){
+//       document.body.style.backgroundColor = "orange"
+//       document.body.style.color = "yellow"
+//       document.body.style.fontSize= "40px"
+//       document.body.style.border = "10px"
+//       document.body.style.alignContent = "centre"
+//    }else{
+//       document.body.style.backgroundColor = "yellow"
+//       document.body.style.color = "orange"
+//       document.body.style.fontSize= "40px"
+//       document.body.style.borderStyle = "20px"
+//       document.body.style.alignContent = "centre"
       
-//       })
-      
-//       console.log(specificId)
-
-const students = [
-   {name : "Sameer", score : 80, Subject: "Math"},
-   {name : "Salman", score : 60, Subject: "English"},
-   {name : "Zaid", score : 90, Subject: "Urdu"},
-   {name : "Shariq", score : 50, Subject: "Math"},
-   {name : "Shuraim", score : 100, Subject: "English"}
-   
-]
-const averageScore = students.reduce((acc,crr)=>{
-   console.log (`acc is ${acc}`)
-   console.log (`crr is ${crr.score}`)
-   acc += crr.score
-   return acc
-},0)
-
-const studentLenght = (averageScore/5)
-console .log (`The Total score of All Student is ${averageScore}`)
-console.log (`The Average Score is  ${studentLenght}`)
+//    }
+//    ;
+// }
 
 
+const colorChanger = document.querySelectorAll("li").forEach((item)=>{
+   item.style.border = "5px solid orange"
+   item.style.width = "100px"
+   item.style.borderRadius = "50px"
+   item.style.backgroundColor = "Yellow"
+   item.style.marginBottom = "20px"
+   item.style.fontSize = "20px"
+   item.style.padding = "20px"
+   item.style.listStyleType = "none"
+   item.style.textAlign = "center"
+   document.body.style.backgroundColor = "LightGreen"
+})
+
+const  colorChanger2 = document.querySelectorAll('ul').forEach((item)=>{
+   item.style.display = "flex"
+   item.style.justifyContent = "space-Between"
+})
